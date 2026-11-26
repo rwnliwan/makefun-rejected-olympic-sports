@@ -45,7 +45,29 @@ well inside the 1–200 character gate.
 
 ## Bundle / check
 
-(To be filled with real numbers after the first bundle + check run.)
+### v1 — bundle `bb3f5cf47eb1088a31ae496468cdb95ee7a8a628bd3dbaf063a1006b310d922c`
+- Bundle: `u-motasimfuad-rejected-olympic-sports-9d83e7da-bundle.tar.gz`,
+  127,948 bytes, built from commit
+  `276da506aab6bbeb5fe9925a4d50fbcb7bf8ea9c` with session
+  `863f1c3d-bf30-4ce7-8259-e1c8ea566dd2` (14 turns, 58 lines).
+  Kit `bundle_sha256` matched the live API exactly
+  (`f083ef94471e0599978883363b999e8ffd2a381822436200f5d8298ae8135b87`).
+- Check v1 (2026-11-26 06:26 UTC): **12 passed / 2 failed / 5 skipped /
+  5 at submission.**
+  - FAIL `thinking_priced`: 0 usage rows attached — expected for a builder
+    subagent; the coordinator re-bundles with usage rows from muse.db.
+  - FAIL `thinking_revised`: no file took its final content from 2+ messages
+    (main.ts written once). Fix: this genuine trial-log revision records the
+    real v1 bundle/check numbers, then re-commit, re-bundle, re-check.
+  - PASS highlights: `thinking_reproduces` 78/80 lines (97.5%),
+    `thinking_turns` 13, entrypoint node22 accepted, LICENSE MIT SPDX,
+    snapshot 5 files / 6,601 bytes within caps.
+  - At-submission checks (repo_public, repo_owner, repo_created_after_open,
+    commit_in_repo, duplicate_snapshot) are evaluated at submit time, not
+    by this local check; repo is public, pushed, created after opening
+    (2026-11-26T06:25:33Z, opening 05:19:08Z), owner.json wallet present.
+
+### v2 — (to be filled after re-bundle + re-check of the revised trial-log)
 
 ## Status
 
