@@ -67,7 +67,20 @@ well inside the 1–200 character gate.
     by this local check; repo is public, pushed, created after opening
     (2026-11-26T06:25:33Z, opening 05:19:08Z), owner.json wallet present.
 
-### v2 — (to be filled after re-bundle + re-check of the revised trial-log)
+### v2 — bundle `8249087aca80e567c02faaabb0ab55bd49aef6b9637ae75bdacf430ae17cb5ba`
+- Bundle: `u-motasimfuad-rejected-olympic-sports-9d83e7da-bundle-v2.tar.gz`,
+  134,235 bytes, built from commit
+  `c275704806aaee34f2f76caa855a4f2737d1ab5e` (trial-log revised with the real
+  v1 numbers) with the same session.
+- Check v2 (2026-11-26 06:27 UTC): **13 passed / 1 failed / 5 skipped /
+  5 at submission.**
+  - FAIL only `thinking_priced`: 0 usage rows attached — expected for a
+    builder subagent; the coordinator re-bundles with usage rows from
+    muse.db (agent_id `863f1c3d-bf30-4ce7-8259-e1c8ea566dd2`).
+  - PASS `thinking_revised`: trial-log.md now takes its final content from
+    2 messages. `thinking_reproduces` 99/101 lines (98.0%),
+    `thinking_turns` 17, snapshot 5 files / 7,993 bytes.
+- Final builder state: 13/1. Ready for coordinator re-bundle + submit.
 
 ## Status
 
